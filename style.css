@@ -65,10 +65,13 @@ main {
 
 .player--active {
   background-color: rgba(255, 255, 255, 0.4);
+  /* background-color: rgba(221, 183, 11, 0.4); */
 }
+
 .player--active .name {
   font-weight: 700;
 }
+
 .player--active .score {
   font-weight: 400;
 }
@@ -132,9 +135,11 @@ main {
 .btn--new {
   top: 4rem;
 }
+
 .btn--roll {
   top: 39.3rem;
 }
+
 .btn--hold {
   top: 46.1rem;
 }
@@ -168,4 +173,16 @@ main {
 
 .hidden {
   display: none;
+}
+
+body {
+  display: grid;
+  text-align: center;
+}
+
+.playerX {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform:uppercase ;
+  color: white;
 }
