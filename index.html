@@ -8,8 +8,34 @@
     <title>Pig Game</title>
   </head>
   <body>
-    <div class="playerX">Player x</div>
-    <main>
+    <div class="wrapper_hidden">
+    <div class="dataUser">
+      <div class="welcome">
+        <h1>Welcome to <span class="accent">Pig Game!</span></h1>
+        <p>
+          "Pig" is a simple dice game where players take turns rolling a die and
+          accumulating points, but risk losing them if they roll a 1. The goal
+          is to be the first player to reach a target score, 100 points.
+        </p>
+      </div>
+      <div class="PlayerData">
+        <div class="wrapData">
+          <div class="playerXData">
+            <label class="playerXName">Player 1 Name: </label>
+            <input type="text" name="" id="player0" />
+          </div>
+          <div class="playerXData">
+            <label class="playerXName">Player 2 Name: </label>
+            <input type="text" name="" id="player1" />
+          </div>
+        </div>
+        <button class="btnStart">Start</button>
+      </div>
+    </div>
+  </div>
+    <span class="playerX">Player x</span>
+
+    <main class="startMain hidden">
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">43</p>

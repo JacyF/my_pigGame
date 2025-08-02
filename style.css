@@ -149,7 +149,16 @@ main {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
+.btnStart:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
 .btn:focus {
+  outline: none;
+}
+
+.btnStart:focus {
   outline: none;
 }
 
@@ -183,6 +192,106 @@ body {
 .playerX {
   font-size: 2.5rem;
   font-weight: 800;
-  text-transform:uppercase ;
+  text-transform: uppercase;
   color: white;
+}
+
+.playerXName {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+}
+
+.PlayerData {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  display: grid;
+  width: 600px;
+  gap: 20px;
+
+}
+
+.playerXData {
+  display: grid;
+  gap: 20px;
+}
+
+.wrapData {
+  display: grid;
+  gap: 10px;
+}
+
+.btnStart {
+  /* transform: translateX(-50%); */
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+input {
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  /* cursor: pointer; */
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+input:active {
+  transform: translate(-20%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+input:focus {
+  outline: none;
+}
+
+.dataUser {
+  display: grid;
+  justify-content: center;
+  width: 600px;
+  gap: 40px;
+  align-items: baseline;
+}
+
+.welcome h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.accent {
+  color: rgba(221, 183, 11, 0.4);
+
+}
+
+.welcome p {
+  font-size: 2.5rem;
+  font-style: italic;
 }
